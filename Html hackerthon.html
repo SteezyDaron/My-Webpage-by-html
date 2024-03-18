@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>This is the homepage of my website.</p>
+    <p>Watoto wakorofi we are winning.</p>
+    <img src="/home/steezy/Downloads/sunset.jpg" alt="Sunset Image">
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>This is the about page of our website.</p>
+    <p>This page is hackerthon challenge. Enjoy this website Done by Daron Steezy.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</body>
+</html>
